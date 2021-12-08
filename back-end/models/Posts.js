@@ -1,0 +1,16 @@
+var mongoose = require('mongoose');
+
+var PostSchema = new mongoose.Schema({
+    title: String,
+    author: String,
+    profilePic: String,
+    date: String,
+    img: String,
+    post: String,
+    job: String
+});
+// ,{collection:"recipes"}
+
+
+
+module.exports = mongoose.model('Post', PostSchema);

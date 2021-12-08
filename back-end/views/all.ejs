@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+
+<% let counter = 0 %>
+
+<section id="recipeContainer">
+    <h2 >Showing <%= title  %></h2>
+
+    <div id="selectFilter">
+        <label for="filter">Filter Recipes</label>
+        <select name="Filter" id="filter" onchange="location = this.value;">
+            <option value="/api/recipes/all">Select:</option>
+            <option value="/api/recipes/all">All Recipes</option>
+            <option value="/api/recipes/chicken">Chicken</option>
+            <option value="/api/recipes/beef">Beef</option>
+            <option value="/api/recipes/pork">Pork</option>
+            <option value="/api/recipes/fish">Fish</option>
+        </select>
+    </div>
+ 
+
+    <% for (var i =0; i < recipes.length; i++) { %>
+        <div class="recipeInfo">
+            <img src="/images/<%= recipes[i].thumbnail %>" alt="<%= recipes[i].recipe %>">
+            <div>
+                <h2><%= recipes[i].recipe  %></h2>
+                <a href="http://localhost:3002/api/recipe/<%= recipes[i]._id %>" class="button">&raquo; VIEW RECIPE</a>
+            </div>
+        </div>
+    <% } %>
+ 
+</section>
+
+  
+ 
+<%- include("partials/blog") %>
+
+<%- include("partials/newsletter") %>
+
+<%- include("partials/footer") %>

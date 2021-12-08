@@ -1,0 +1,23 @@
+<%- include("partials/header") %>
+
+    <section id="landing">
+        <div id="landingCon">
+            <h2><%= post.title %></h2>
+            <img src="/images/<%= post.profilePic %>" alt="<%= post.author %> head-shot" id="editor">
+            <p class="postInfo"><%= post.author %>, <%= post.job %></p>
+            <p class="postInfo"><%= post.date %></p>
+        </div>
+        
+        <div id="postContent">
+            <img src="/images/<%= post.img %>" alt="post photo" id="landingImg">
+            <p><%= post.post %></p>
+        </div>
+        <a href="/api/posts/all" class="button recipeBtn">&raquo; VIEW ALL POSTS</a>
+
+    </section>
+
+  <%- include("partials/blog") %>
+
+  <%- include("partials/newsletter") %>
+
+  <%- include("partials/footer") %>

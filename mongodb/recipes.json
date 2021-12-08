@@ -1,0 +1,65 @@
+[
+  {
+    "recipe": "Authentic Jamaican Jerk Chicken",
+    "bio": " A true classic with Authentic flavours you can taste!",
+    "time": "8 hours",
+    "cost": "$$",
+    "img": "jerk_chicken.jpg",
+    "thumbnail": "jerk_chicken-th.jpg",
+    "recipe_type": "chicken"
+  },
+  {
+    "recipe": "Kansas City Spatchcock Chicken",
+    "bio": "A great dinner for a summer night BBQ with friends!",
+    "time": "3.5 hours",
+    "cost": "$$",
+    "img": "spatchcock.jpg",
+    "thumbnail": "spatchcock-th.jpg",
+    "recipe_type": "chicken"
+  },
+  {
+    "recipe": "Lemon Pepper Beer Can Chicken",
+    "bio": "A weeknight staple that will never let you down!",
+    "time": "2.5 hours",
+    "cost": "$$",
+    "img": "beercan.jpg",
+    "thumbnail": "beercan-th.jpg",
+    "recipe_type": "chicken"
+  },
+  {
+    "recipe": "Chicken Lollipops",
+    "bio": "A fun twist on a classic drumstick, the kids will love this one!",
+    "time": "1.5 hours",
+    "cost": "$$",
+    "img": "lollipops.jpg",
+    "thumbnail": "lollipops-th.jpg",
+    "recipe_type": "chicken"
+  },
+  {
+    "recipe": "42 Day Dry Aged Tomahawk",
+    "bio": "This will make you never want to order a steak off any menu ever again!",
+    "time": "1.5 hours",
+    "cost": "$$$",
+    "img": "tomahawk.jpg",
+    "thumbnail": "tomahawk-th.jpg",
+    "recipe_type": "beef"
+  },
+  {
+    "recipe": "Char Grilled Pork End Chops",
+    "bio": "The juiciest and most flavorful pork chop you will ever have!",
+    "time": "1 hour",
+    "cost": "$$$",
+    "img": "chop.jpg",
+    "thumbnail": "chop-th.jpg",
+    "recipe_type": "pork"
+  },
+  {
+    "recipe": "Cold Smoked Atlantic Salmon",
+    "bio": "Say goodbye to store bought smoked salmon with this! Served on fresh sourdough with goats cream cheese and honey",
+    "time": "24 hours",
+    "cost": "$$$",
+    "img": "salmon.jpg",
+    "thumbnail": "salmon-th.jpg",
+    "recipe_type": "fish"
+  }
+]
