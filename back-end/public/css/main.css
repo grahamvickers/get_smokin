@@ -331,8 +331,8 @@ footer p{
 
 #postContent p{
 
-    padding: 40px;
-    margin-bottom: none;
+    /* padding: 40px; */
+    margin-bottom: 40px;
 }
 
 /* all recipe page content is below */
@@ -448,6 +448,27 @@ input{
     }
 }
 
+@media screen and (min-width: 780px) {
+
+    #postContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    #postContent img{
+        width: 45%;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+
+    #postContent p{
+        width: 50%;
+        padding: none;
+
+    }
+}
+
 /* all desktop changes happen here */
 @media screen and (min-width: 960px) {
     body{
@@ -490,24 +511,6 @@ input{
 
     .recipeInfo h2{
         margin-bottom: 50px;
-    }
-
-    #postContent{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-    }
-    #postContent img{
-        width: 50%;
-        padding: 20px;
-
-    }
-
-    #postContent p{
-        width: 50%;
-        padding: 20px;
-
     }
 
 }
