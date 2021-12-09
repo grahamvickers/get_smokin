@@ -56,12 +56,15 @@ header{
     padding: 20px 40px 20px 40px;
 }
 
-
+/* nav elements below */
 #logo{
     width: 140px;
     height: auto;
 }
 
+#navCon{
+    display: none;
+}
 #mainNav{
     display: flex;
     flex-direction: row;
@@ -88,6 +91,57 @@ nav ul{
     padding: 10px;
     font-family: 'neuzeit-grotesk', sans-serif;
     font-weight: 400;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3d464ff9;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-con {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    font-family: 'neuzeit-grotesk', sans-serif;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #BF5630;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #E4E4E4;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay a {
+    font-size: 20px
+}
+
+.overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
 }
 
 label{
@@ -489,7 +543,15 @@ input{
     #logo{
         width: 200px;
     }
-
+    #navCon{
+        display: block;
+    }
+    #navOverCon{
+        display: none;
+    }
+    #hmbgrMenu{
+        display: none;
+    }
     nav a{
         padding: 10px;
         color: #3D464F;
