@@ -23,16 +23,33 @@
     </section>
     <header>
         <img src="/images/logo_v1.svg" alt="Get Smokin' logo" id="logo">
-        <div>
+        <span id="hmbgrMenu" style="font-size:30px;cursor:pointer;color: #BF5630;" onclick="showNav()">&#9776; </span>
+        <div id="navCon">
             <nav id="mainNav">
                 <h3 class="hidden">Main Navigation</h3>
                 <ul>
                     <li><a href="/">HOME</a></li>
                     <li><a href="/api/posts/all">BLOG</a></li>
                     <li><a href="/api/recipes/all">RECIPES</a></li>
+                    <li><a href="/signup">SIGN UP</a></li>
                 </ul>
+                
             </nav>
         </div>
+        <div id="navOverCon" class="overlay">
+            <h3 class="hidden">Main Navigation</h3>
+            <a href="javascript:void(0)" class="closebtn" onclick="hideNav()">&times;</a>
+            <div class="overlay-con">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/api/posts/all">BLOG</a></li>
+                    <li><a href="/api/recipes/all">RECIPES</a></li>
+                    <li><a href="/signup">SIGN UP</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
+
+
 
 <main id="main">
