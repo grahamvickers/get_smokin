@@ -335,6 +335,11 @@ footer p{
     margin-bottom: 40px;
 }
 
+#postContent img{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 /* all recipe page content is below */
 #recipeContainer{
     padding: 30px 40px 30px 40px;
