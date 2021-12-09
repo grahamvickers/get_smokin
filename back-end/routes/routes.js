@@ -125,9 +125,15 @@ router.get('/signup', function(req, res, next) {
 router.post('/api/user/new', function(req, res, next) {
   User.create(req.body, function (err, user) {
     if (err) return next(err);
-    res.redirect('/');
+    res.redirect('/completed');
   });
 });
 
+
+// get the completed page
+// create the signup route 
+router.get('/completed', function(req, res, next) {
+  res.render('completed', { title: 'Success'});
+});
 
 module.exports = router;
