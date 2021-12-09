@@ -5,6 +5,7 @@ var PostSchema = new mongoose.Schema({
     author: String,
     profilePic: String,
     date: String,
+    postMonth: String,
     img: String,
     post: String,
     job: String

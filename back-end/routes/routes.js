@@ -91,6 +91,14 @@ router.get('/api/posts/all', function(req, res, next) {
   });
 });
 
+// get recent blog posts
+router.get('/api/posts/recent', function(req, res, next) {
+  Post.find({postMonth: "december"}).exec(function (err, posts) {
+    if (err) return next(err);
+    res.render('blog', { title: 'Recent Posts', posts:posts });
+  });
+});
+
 // load individual post page
 router.get('/api/post/:id', function(req, res, next) {
   Post.findById(req.params.id, function (err, post) {
