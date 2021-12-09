@@ -422,7 +422,7 @@ footer p{
 
 .moreInfo{
     font-size: 16px;
-    font-weight: 200px;
+    font-weight: 200;
 }
 
 /* all create form styles */
@@ -497,7 +497,7 @@ input{
     .recipeInfo{
         display: flex;
         flex-direction: row;
-        margin-bottom: none;
+        margin-bottom: 0;
         padding: 30px;
     }
     .recipeInfo img{
@@ -524,7 +524,7 @@ input{
 
     #postContent p{
         width: 50%;
-        padding: none;
+        padding: 0;
 
     }
 }
