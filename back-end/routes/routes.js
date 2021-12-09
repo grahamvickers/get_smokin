@@ -99,6 +99,14 @@ router.get('/api/posts/recent', function(req, res, next) {
   });
 });
 
+// get popular blog posts
+router.get('/api/posts/popular', function(req, res, next) {
+  Post.find({show: "popular"}).exec(function (err, posts) {
+    if (err) return next(err);
+    res.render('blog', { title: 'Popular Posts', posts:posts });
+  });
+});
+
 // load individual post page
 router.get('/api/post/:id', function(req, res, next) {
   Post.findById(req.params.id, function (err, post) {

@@ -358,6 +358,7 @@ footer p{
 .recipeInfo:nth-child(even){
     margin-bottom: 30px;
     background: #E4E4E4;
+    border-radius: 5px;
 }
 
 
