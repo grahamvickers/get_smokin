@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<section id="create">
+        <form id="createForm"
+            method="post" 
+            action="http://localhost:3002/api/user/new"
+        >
+            <h2>Sign up for your weekly newsletter</h2>
+
+            <label for="fname">First Name:</label>
+            <input id="fname" name="fname" placeholder="Alexander" type="text">
+
+            <label for="lname">Last Name:</label>
+            <input id="lname" name="lname" placeholder="Mathews" type="text">
+            
+            <label for="email">Email:</label>
+            <input id="email" name="email" placeholder="uremail@company.com" type="email">
+            
+            <button type="submit" id="submit">&raquo; SIGN UP</button>
+            <!-- <input type="submit" value="SIGN UP" id="submit"> -->
+
+        </form>
+
+    
+
+</section>
+
+  <%- include("partials/blog") %>
+
+  <%- include("partials/newsletter") %>
+
+  <%- include("partials/footer") %>

@@ -5,6 +5,9 @@ mongoimport --jsonArray -d ${MONGO_INITDB_DATABASE} -c recipes --file /docker-en
 
 mongoimport --jsonArray -d ${MONGO_INITDB_DATABASE} -c posts --file /docker-entrypoint-initdb.d/blog.json
 
+mongoimport --jsonArray -d ${MONGO_INITDB_DATABASE} -c users --file /docker-entrypoint-initdb.d/users.json
+
+
 mongo <<EOF
 use $MONGO_INITDB_DATABASE
 db.createUser({

@@ -4,6 +4,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Recipe = require('../models/Recipes.js'); //recipe schema 
 var Post = require('../models/Posts.js'); //post(blog) schema 
+var User = require('../models/Users.js'); //user schema 
 
 // load index page
 router.get('/', function(req, res, next){
@@ -82,7 +83,7 @@ router.get('/api/posts', function(req, res, next) {
   });
 });
 
-// load recipe list order
+// load blog posts list 
 router.get('/api/posts/all', function(req, res, next) {
   Post.find(function (err, posts) {
     if (err) return next(err);
@@ -90,7 +91,7 @@ router.get('/api/posts/all', function(req, res, next) {
   });
 });
 
-// load individual detail page
+// load individual post page
 router.get('/api/post/:id', function(req, res, next) {
   Post.findById(req.params.id, function (err, post) {
     if (err) return next(err);
@@ -98,4 +99,19 @@ router.get('/api/post/:id', function(req, res, next) {
     res.render('post', { title: 'Full Post', post });
   });
 });
+
+// create the signup route 
+router.get('/signup', function(req, res, next) {
+  res.render('signup', { title: 'Sign Up'});
+});
+
+// create the user in the database
+router.post('/api/user/new', function(req, res, next) {
+  User.create(req.body, function (err, user) {
+    if (err) return next(err);
+    res.redirect('/');
+  });
+});
+
+
 module.exports = router;

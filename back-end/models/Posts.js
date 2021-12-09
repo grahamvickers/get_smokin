@@ -9,8 +9,5 @@ var PostSchema = new mongoose.Schema({
     post: String,
     job: String
 });
-// ,{collection:"recipes"}
-
-
 
 module.exports = mongoose.model('Post', PostSchema);
