@@ -9,8 +9,5 @@ var RecipeSchema = new mongoose.Schema({
     thumbnail: String,
     recipe_type: String
 });
-// ,{collection:"recipes"}
-
-
 
 module.exports = mongoose.model('Recipe', RecipeSchema);

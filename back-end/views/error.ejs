@@ -34,10 +34,11 @@
 
 <main id="main">
 
-
-    <h3><%= message %></h3>
-    <h3><%= error.status %></h3>
-    <h3>Oopsies, something went wrong :( lets go back and fix that</h3>
+    <div id="error">
+        <h3><%= message %></h3>
+        <h3>Oopsies, something went wrong :( lets go back and fix that</h3>
+        <button onclick="history.back()">Go Back</button>  
+    </div>
 
 
 <%- include("partials/footer") %>
