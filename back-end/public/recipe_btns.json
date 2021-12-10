@@ -1,0 +1,22 @@
+[
+    {
+        "img": "images/chicken.png",
+        "type": "CHICKEN",
+        "url": "/api/recipes/chicken"
+    },
+    {
+        "img": "images/steak.png",
+        "type": "BEEF",
+        "url": "/api/recipes/beef"
+    },
+    {
+        "img": "images/sausage.png",
+        "type": "PORK",
+        "url": "/api/recipes/pork"
+    },
+    {
+        "img": "images/fish.png",
+        "type": "FISH",
+        "url": "/api/recipes/fish"
+    }
+]

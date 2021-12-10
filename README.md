@@ -35,6 +35,7 @@ Then go to - [localhost:3002](https://localhost:3002) - in a web broswer of your
 * JaveScript - Front-end enhancments
 * Node EJS -  templating and data passing
 * MongoDB - Database 
+* Ajax - Json data 
 * GitHub - Version control
 * Docker - Local Remote server
 

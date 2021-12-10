@@ -400,7 +400,7 @@ footer p{
 }
 
 .recipeInfo{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 20px 20px 40px 20px;
    
     
@@ -410,7 +410,6 @@ footer p{
     margin-bottom: 20px;
 }
 .recipeInfo:nth-child(even){
-    margin-bottom: 30px;
     background: #E4E4E4;
     border-radius: 5px;
 }
